@@ -4,12 +4,9 @@ import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
 import {
-  ArrowDown,
-  Server,
   GitBranch,
   Cloud,
   Code2,
-  Laptop,
   Boxes
 } from "lucide-react";
 import Image from "next/image";
@@ -113,7 +110,7 @@ const FloatingIcons = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {icons.map((icon, index) => {
+      {icons.map((icon) => {
         // Generate random positions within the viewport
         const randomX = Math.random() * (dimensions.width || 1000);
         const randomY = Math.random() * (dimensions.height || 800);

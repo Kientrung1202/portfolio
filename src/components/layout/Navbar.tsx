@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import {
@@ -23,7 +23,7 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   return (
     <motion.header
