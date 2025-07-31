@@ -9,8 +9,8 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_CHATBOT_BASE_URL=${NEXT_PUBLIC_CHATBOT_BASE_URL}
-      - NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT=${NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT}
+      - NEXT_PUBLIC_CHATBOT_BASE_URL
+      - NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT
     restart: unless-stopped
     # Add healthcheck to ensure the container is running properly
     healthcheck:
