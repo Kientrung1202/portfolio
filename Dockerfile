@@ -2,8 +2,8 @@ FROM node:22.12.0-alpine
 
 WORKDIR /app
 
-# Enable corepack to use pnpm
-RUN corepack enable
+# Install pnpm globally with the version specified in package.json
+RUN npm install -g pnpm@8.10.5
 
 # Install dependencies
 COPY package*.json pnpm-lock.yaml ./
