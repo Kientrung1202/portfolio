@@ -5,6 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_CHATBOT_BASE_URL=${NEXT_PUBLIC_CHATBOT_BASE_URL}
+        - NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT=${NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT}
     ports:
       - "3000:3000"
     environment:

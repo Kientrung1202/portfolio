@@ -12,6 +12,14 @@ RUN pnpm install --frozen-lockfile
 # Copy source code
 COPY . .
 
+# Accept build arguments for Next.js public environment variables
+ARG NEXT_PUBLIC_CHATBOT_BASE_URL
+ARG NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT
+
+# Set environment variables for build time
+ENV NEXT_PUBLIC_CHATBOT_BASE_URL=$NEXT_PUBLIC_CHATBOT_BASE_URL
+ENV NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT=$NEXT_PUBLIC_CHATBOT_AGENT_ENDPOINT
+
 # Build the app
 ENV NODE_ENV=production
 RUN pnpm run build
