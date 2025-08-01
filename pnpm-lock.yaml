@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kientrung1202/mastra-chatbot':
-    specifier: ^1.0.3
-    version: 1.0.3(openapi-types@12.1.3)(react-dom@19.1.1)(react@19.1.1)(zod@3.25.76)
+    specifier: ^1.0.4
+    version: 1.0.4(openapi-types@12.1.3)(react-dom@19.1.1)(react@19.1.1)(zod@3.25.76)
   '@radix-ui/react-dialog':
     specifier: ^1.1.11
     version: 1.1.14(@types/react-dom@19.1.7)(@types/react@19.1.9)(react-dom@19.1.1)(react@19.1.1)
@@ -607,8 +607,8 @@ packages:
     resolution: {integrity: sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==}
     dev: false
 
-  /@kientrung1202/mastra-chatbot@1.0.3(openapi-types@12.1.3)(react-dom@19.1.1)(react@19.1.1)(zod@3.25.76):
-    resolution: {integrity: sha512-tfcK4ymyU3S/lwPATfUCfrkuj6wD5XphK7dlDPCccOqf7Zl1NYZjBK4kzZ/m6QH8zLiO5helvRW86M/K+ZIGwg==}
+  /@kientrung1202/mastra-chatbot@1.0.4(openapi-types@12.1.3)(react-dom@19.1.1)(react@19.1.1)(zod@3.25.76):
+    resolution: {integrity: sha512-Es8Sote4Cj7brasHJ545MXSeauASqM/yNdJkoSBn3rp5S7iMOmLwCEQwFZ4xE7qs1doBpxZCU/h8Rb8rusbzew==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
